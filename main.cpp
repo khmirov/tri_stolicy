@@ -1,6 +1,5 @@
 #include <iostream>
 #include <string>
-#include <vector>
 #include "Capital.h"
 
 using namespace std;
@@ -23,12 +22,9 @@ int main() {
     london.SetName("London");
     london.SetPopulation(9000000);
 
-
-    void Compare()
-    {
-        if (london.GetPopulation() > varshava.GetPopulation() && moscow.GetPopulation() > london.GetPopulation()) {
-            cout << "The biggest capital of population is" << endl << Show(moscow) << endl;
-        }
+    if (london.GetPopulation() > varshava.GetPopulation() && moscow.GetPopulation() > london.GetPopulation()) {
+        cout << "The biggest capital of population is" << endl;
+        moscow.Show();
     }
-}
 
+}
